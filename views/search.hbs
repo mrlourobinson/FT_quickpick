@@ -1,0 +1,19 @@
+<h1 class="o-typography-heading-level-1">{{ title }}: {{ searchTerm }}</h1>
+</div>
+
+<div class="o-grid-row">
+{{# each searchArr }}
+<div data-o-grid-colspan="12 S12 M6 L6" >
+	<div class="o-teaser o-teaser--small" data-o-component="o-teaser">
+		<div class="o-teaser__content">
+			<div class="o-teaser__meta">
+				<a href="/search/{{ section }}"  class="o-teaser__tag">{{ section }}</a>
+			</div>
+			<h2 class="o-teaser__heading">
+				<a href="{{ URL }}">{{ title }}</a>
+			</h2>
+			<p class="o-teaser__standfirst">{{ summary }}</p>
+		</div>
+	</div>
+</div>
+{{/each}}
